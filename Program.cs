@@ -61,8 +61,15 @@ namespace Holz
                 baume.RemoveAt(index);
 
                 userinput = Console.ReadLine().ToLower();
-                
-                if (vergleicher.)
+
+                if (vergleicher.richtiger(userinput, temp))
+                {
+                    Console.WriteLine("du sehr gut");
+                }
+                else
+                {
+                    Console.WriteLine("Nope du looser, her ist es: " + temp);
+                }
             }
         }
     }
